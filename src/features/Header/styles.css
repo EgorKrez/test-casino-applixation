@@ -1,0 +1,40 @@
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    height: 58px;
+    width: 347px;
+    padding-top: 3px;
+    margin: 12px 16px 0px 0px;
+}
+
+.search-button {
+    height: 35px;
+    width: 35px;
+    background: #E93E3A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-top: 12px;
+}
+
+.header-logo-wrapper {
+    display: flex;
+    gap: 8px;
+}
+
+.header-setting {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+@media screen and (min-width: 600px){
+    .header-wrapper {
+        width: calc(100% - 48px);
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

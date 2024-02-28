@@ -1,0 +1,13 @@
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    background: #32333F;
+    position: relative;
+    width: 100%;
+}
+
+.menu-background {
+    position: absolute;
+    right: 0;
+    top: 196px;
+}

@@ -1,0 +1,106 @@
+.dropdowns-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.dropdown {
+    width: 50%;
+    height: 50px;
+    box-shadow: 0px 5px 15px 0px #4C3E6626;
+    border: 2px solid #FFFFFF;
+    background: #E0E1EA;
+    border-radius: 111px;
+    padding-left: 20px;
+    font-family: 'Merriweather Sans';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 600px) {
+    .dropdowns-wrapper {
+        margin-top: 30px;
+        gap: 20px;
+    }
+    .dropdown {
+        height: 80px;
+        font-size: 18px;
+    }
+}
+
+.dropdown:hover {
+    background: #c7c8d0;
+}
+
+.dropdown-icon {
+    margin-top: 4px;
+}
+
+.dropdown-input-wrapper {
+    position: relative;
+}
+
+.dropdown-items {
+    position: absolute;
+    height: 145px;
+    width: 310px;
+    background: #FFFFFF;
+    z-index: 2;
+    top: 58px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4px;
+    padding-left: 4px;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.dropdown-item {
+    width: 286px;
+    height: 29px;
+    padding: 6px 4px 6px 4px;
+    font-family: 'Merriweather Sans';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A8A8A8;
+    text-align: left;
+    border: none;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 600px) {
+    .dropdown-items {
+        width: 495px;
+        top: 88px;
+    }
+    .dropdown-item {
+        height: 50px;
+        font-size: 16px;
+        width: 400px;
+    }
+}
+
+.dropdown-item:last-child {
+    margin-bottom: 4px;
+}
+
+.dropdown-item:hover {
+    background: #E0E1EA;
+}

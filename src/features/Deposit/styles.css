@@ -1,0 +1,59 @@
+.deposit-wrapper {
+    min-height: 288px;
+    padding-top: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 16px;
+    width: 311px;
+    position: relative;
+    background: linear-gradient(180.51deg, #eac70b 2.6%, #BE2929 60.69%),
+    linear-gradient(0deg, #FF0000, #FF0000);
+    border-radius: 3px;
+}
+
+.deposit-label {
+    font-family: 'BadaBoom BB', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.deposit-container {
+    position: absolute;
+    top: 166px;
+    z-index: 3;
+}
+
+.fire-background {
+    position: absolute;
+    top: -80px;
+    background: none;
+    width: 343px;
+    height: 80px;
+}
+
+@media screen and (min-width: 600px) {
+    .deposit-wrapper {
+        width: 500px;
+        min-height: 440px;
+        padding-top: 30px;
+        border-radius: 4px;
+    }
+    .deposit-label {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 22px;
+    }
+    .fire-background {
+        width: 532px;
+        height: 124px;
+        top: -123px;
+    }
+}

@@ -1,0 +1,138 @@
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 351px;
+    position: relative;
+    padding: 0px 10px 36px 0px;
+    margin-left: 16px;
+}
+
+.menu-footer-wrapper {
+    margin-top: 29px;
+    margin-left: 0;
+}
+
+.sign-in-button-icon {
+    position: absolute;
+    fill: #4F5C69C4;
+    transition: 0.3s;
+    width: 131px;
+    height: 45px;
+}
+
+.sign-in-button {
+    width: 131px;
+    height: 45px;
+    background: none;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        .sign-in-button-icon {
+            fill: #323440;
+        }
+    }
+}
+
+.sign-up-button-icon {
+    position: absolute;
+    top: -24px;
+    left: -24px;
+    fill: #FCC211;
+}
+
+.sign-up-button {
+    width: 131px;
+    height: 45px;
+    background: none;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        .sign-up-button-icon {
+            fill: #e1a011;
+        }
+    }
+}
+
+
+
+.sign-in-button-label {
+    font-family: 'Merriweather Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.sign-up-button-label {
+    font-family: 'Merriweather Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #05071A;
+    z-index: 1;
+}
+
+
+.menu-button-icon {
+    cursor: pointer;
+    fill: #ffeabb;
+    transition: 0.3s;
+    width: 65px;
+    height: 94px;
+}
+
+.menu-button-icon-wrapper {
+    border: none;
+    background: none;
+    position: absolute;
+    left: 136px;
+    bottom: 10px;
+    &:hover {
+        .menu-button-icon {
+            fill: #bfb08c;
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px){
+    .footer-wrapper {
+        width: 450px;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .menu-button-icon-wrapper {
+        left: calc(50% - 53px);
+        bottom: 0;
+    }
+    .sign-up-button-icon {
+        width: 227px;
+        height: 152px;
+        top: -58px;
+        left: auto;
+    }
+    .sign-in-button-icon {
+        width: 240px;
+        height: 62px;
+    }
+    .menu-button-icon {
+        width: 90px;
+        height: 130px;
+    }
+}

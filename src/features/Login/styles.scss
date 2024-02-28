@@ -1,0 +1,106 @@
+.login-button-icon {
+    width: 117px;
+    height: 42px;
+    fill: #606678;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.login-button {
+    width: 117px;
+    height: 42px;
+    background: none;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        .login-button-icon {
+                fill: #4d4d50;
+        }
+    }
+}
+
+.register-button-icon {
+    width: 189px;
+    height: 42px;
+    fill: #FCC211;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.register-button {
+    width: 189px;
+    height: 42px;
+    background: none;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        .register-button-icon {
+            fill: #e1a011;
+        }
+    }
+}
+
+
+.login-wrapper h1 {
+    font-family: 'Merriweather Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    z-index: 1;
+}
+
+.register-label {
+    color: #05071A;
+}
+
+.login-label {
+    color: #FFFFFF;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 37px;
+    position: relative;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .login-wrapper {
+      margin-top: 24px;
+      margin-right: 0;
+    }
+    .register-button-icon {
+        width: 300px;
+        height: 62px;
+    }
+    .register-button {
+        width: 300px;
+        height: 62px;
+    }
+    .login-button-icon {
+        width: 240px;
+        height: 62px;
+    }
+    .login-button {
+        width: 240px;
+        height: 62px;
+    }
+}
